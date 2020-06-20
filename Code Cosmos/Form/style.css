@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url("./images/bg-intro-desktop.png");
+  background-color: #181f2a ;
+  font-family: 'Poppins', sans-serif;
+
+}
+.both {
+  display: flex;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
+  min-height: 97vh;
+}
+.learn {
+  width: 51%;
+  color: white;
+}
+.text {
+  width: 80%;
+  margin-left: auto;
+}
+.text h1 {
+  font-size: 40px;
+  width: 90%;
+  margin-bottom: 25px;
+  line-height: 45px;
+  padding-top: 20px;
+}
+.text p {
+  font-size: 16px;
+  width: 95%;
+}
+.intro-form {
+  width: 49%;
+  align-items: center;
+  justify-content: center;
+}
+#forms {
+  width: 75%;
+}
+.try {
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 6px 3px rgba(0,0,0, 0.3);
+}
+.free {
+  font-weight: 600;
+  font-weight: bold;
+}
+form {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0px 7px 3px rgba(0,0,0, 0.2);
+}
+.group {
+  position: relative;
+  margin-bottom: 18px;
+}
+input, button {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid hsl(246, 25%, 77%);
+  padding-left: 30px;
+}
+input:active {
+  background-color: white;
+}
+input[type=text]:hover, input[type=email]:hover, input[type=password]:hover {
+  border: 1px solid black;
+}
+input::placeholder {
+  color: hsl(249, 10%, 26%);
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+button {
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  border-bottom: 3px solid hsl(153, 35%, 35%);
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+button:active, button:hover {
+  background-color: hsl(154, 80%, 60%);
+  border-bottom: 3px solid hsl(153, 35%, 35%);
+  outline: none;
+}
+form p {
+  width: 91%;
+  margin: auto;
+  font-size: 12px;
+  color: hsl(246, 25%, 77%);
+  text-align: center;
+}
+.terms {
+  color: hsl(0, 100%, 74%);
+}
+.mssg {
+  color: hsl(0, 100%, 74%);
+  width: 100%;
+  text-align: right;
+  font-weight: 500;
+  font-size: 13px;
+  font-style: italic;
+  margin-top: 2px;
+  display: none;
+}
+.error {
+  display: block;
+  position: absolute;
+  top: 18%;
+  right: 20px;
+  display: none;
+}
+.error-tag .error,
+.error-tag .mssg {
+  display: block;
+}
+.error-tag input {
+  border: 2px solid hsl(0, 100%, 74%);
+}
+.attribution a:hover {
+  color: white;
+}
+
+
+@media (max-width:950px) {
+  body {
+    background-image: url("./images/bg-intro-mobile.png");
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+  .both {
+    display: flex;
+    flex-direction: column;
+  }
+  .learn {
+    flex: 1;
+    width: 80%;
+    margin-bottom: 40px;
+  }
+  .intro-form {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  #forms {
+    width: 100%;
+  }
+  .text {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .text h1 {
+    width: 100%;
+    font-size: 35px;
+    margin-bottom: 13px;
+    line-height: 45px;
+    padding-top: 0;
+  }
+  .text p {
+    font-size: 15px;
+    width: 100%;
+  }
+}
+
+@media (max-width:720px) {
+  .learn {
+    width: 85%;
+    margin-bottom: 40px;
+  }
+  .intro-form {
+    width: 70%;
+  }
+  .text h1 {
+    font-size: 33px;
+  }
+  .text p {
+    font-size: 15px;
+    width: 95%;
+    margin: auto;
+  }
+}
+
+@media (max-width:500px) {
+  .learn {
+    width: 90%;
+  }
+  .intro-form {
+    width: 85%;
+  }
+  .text h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  .text p {
+    font-size: 15px;
+    width: 98%;
+  }
+  .try {
+    padding-left: 90px;
+    padding-right: 90px;
+    font-size: 16px;
+  }
+}
