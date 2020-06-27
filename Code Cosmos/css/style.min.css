@@ -55,6 +55,7 @@ img, img.responsive {
   font-weight: 600;
   line-height: 1.3;
   color: #fff
+  
 }
 
 .title-large {
@@ -112,6 +113,7 @@ img, img.responsive {
   background: linear-gradient(to right, #65e2d9, #339ecc);
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
+
 }
 
 .attrib {
@@ -121,6 +123,8 @@ img, img.responsive {
   line-height: inherit;
   text-align: center;
   color: #fff
+  display:relative;
+  right: 10px;
 }
 
 .header {
@@ -174,6 +178,11 @@ img, img.responsive {
   margin: 0 1rem
 }
 
+.header .navbar .menu-item:active{
+  /* background-color: #339ecc; */
+  color: #339ecc;
+}
+
 .header .navbar .menu-item a {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
@@ -182,6 +191,7 @@ img, img.responsive {
   color: #fff;
   opacity: 0.8;
   text-transform: capitalize
+
 }
 
 .header .showcase {
@@ -202,11 +212,15 @@ img, img.responsive {
   max-width: 60%;
   height: auto;
   margin: 0 auto;
-  padding: 2rem 0 10rem 0
+  padding: 0 0 8rem 0;
+}
+
+.name-navbar{
+  font-size: 2rem;
 }
 
 .header .showcase-image {
-  padding: 2rem 0
+  /* padding: 0.5rem 0; */
 }
 
 .header .showcase-text .paragraph {
@@ -247,8 +261,9 @@ img, img.responsive {
 }
 
 .Codesymbol{
-  margin-top: 10px;
-  padding-top: 8px;
+  margin-top: 13px;
+  padding-top: 20px;
+  margin-left: 5px;
   /* display: block; */
 }
 
@@ -332,6 +347,10 @@ img, img.responsive {
 }
 #exploreedit{
   margin-top: 10em;
+}
+
+#Contest-div{
+  margin-top: 1em;
 }
 
 .main .testimo::before {
@@ -556,6 +575,9 @@ img, img.responsive {
   margin-bottom: 1rem
 }
 
+.footer-link{
+  color: #79d70f;
+}
 .footer .links-item .menu li a {
   font-size: 1rem;
   font-weight: inherit;
@@ -675,7 +697,7 @@ img, img.responsive {
     align-items: center
   }
 
-  .footer .links-item {
+   #Linkitem {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

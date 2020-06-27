@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="shortcut icon" type="image/png" sizes="32x32" href="img\vikalplogotrans.png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
 
   <title>Contest</title>
 
@@ -31,55 +32,43 @@
         <h1>Contest</h1>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
            labore et dolore magna aliqua </p>
-           <div class="links">
-              <div class="links-item" id="Linkitem">
-                 <div class="social">
-                    <a href="#"><ion-icon name="logo-facebook" class="facebook"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-linkedin" class="linkedin"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-instagram" class="instagram"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-youtube" class="youtube"></ion-icon></a>
-                 </div>
-              </div>
-           </div>
-
       </div>
     </section>
 
     <section id="my-form" class="intro-form">
       <div id="forms">
-        <!-- <div class="try"><span class="free">Try it free 7 days</span> then $20/mo. thereafter</div> -->
-        <form action="" class="form-group">
-          <div class="group">
-            <input type="text" name="Firstname" id="Firstname" placeholder="Name">
-            <img src="./images/icon-error.svg" alt="" class="error">
-            <p class="mssg">First name cannot be empty</p>
-          </div>
-          <div class="group">
-            <input type="text" name="Lastname" id="Lastname" placeholder="College">
-            <img src="./images/icon-error.svg" alt="" class="error">
-            <p class="mssg">College name cannot be empty</p>
-          </div>
-          <div class="group">
-            <input type="email" name="email" id="email" placeholder="Phone Number">
-            <img src="./images/icon-error.svg" alt="" class="error">
-            <p class="mssg">Not valid phone number</p>
-          </div>
-          <div class="group">
-            <input type="password" name="password" id="password" placeholder="Email Address">
-            <img src="./images/icon-error.svg" alt="" class="error">
-            <p class="mssg">Email cannot be empty</p>
-          </div>
-          <div class="group">
-            <input type="password" name="password" id="password" placeholder="Repositary Link">
-            <img src="./images/icon-error.svg" alt="" class="error">
-            <p class="mssg">This cannot be empty</p>
-          </div>
-          <button type="submit" id="submit">Submit</button>
 
+<!--
+        action="https://docs.google.com/forms/d/e/1FAIpQLSdYcwuVIa_vhLRglEmj6rvHxE7qYyw-UA31lrrFIBZIr0gzDQ/formResponse" -->
+        <!-- <form action="" class="form-group"> -->
+          <!-- Update the Google forms URL in action-->
+          <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd09Xj_40J3Bl6CiYkN4GSC_cDQzzbjzezMS9jUuTql9msi_w/formResponse" class="form-group" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+
+          <div class="group">
+            <input type="text" name="Firstname" id="name" placeholder="Name" required name="entry.393698244">
+          </div>
+
+          <div class="group">
+            <input type="text" name="Lastname" id="college" placeholder="College" required name="entry.1600284689">
+          </div>
+
+          <div class="group">
+            <input type="email" name="email" id="phone" placeholder="Phone Number" required name="entry.1600284689">
+          </div>
+
+          <div class="group">
+            <input type="text" name="Lastname" id="email" placeholder="Email" required name="entry.1600284689">
+          </div>
+
+          <div class="group">
+            <input type="text" name="Lastname" id="repo" placeholder="Repository Link" required name="entry.1600284689">
+          </div>
+
+          <button type="submit" id="submit">Submit</button>
         </form>
       </div>
     </section>
-  </section>
+
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   <script src="app.js"></script>
 </body>
